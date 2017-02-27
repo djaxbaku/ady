@@ -1,0 +1,22 @@
+$headerTopFont: #839cbb;
+$headerMidFont: #718097;
+$bgclr: #F6F9FA;
+$ff: "Roboto Condensed";
+.fa{
+  font-size: 17px;
+}
+.flexCenter{
+  display: flex;
+  align-items: center;
+}
+.activea{
+  background-color: white;
+  color:#007bc8 !important;
+  border-top:3px solid #007bc8 !important;
+}
+.Heading{
+  font-size: 23px;
+  color: #464e63;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
