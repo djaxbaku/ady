@@ -8287,6 +8287,7 @@ body {
       body .header .headerMid .logo img {
         width: 135px; }
   body .header .background {
+    z-index: -1;
     position: absolute;
     width: 100%;
     height: 180%;
@@ -8378,11 +8379,10 @@ body {
           width: 100%;
           object-fit: cover; }
   body .main .mainTables {
-    padding: 30px 0px 13px;
+    padding: 30px 15px 13px;
     height: 292px; }
     body .main .mainTables .leftTable {
-      width: 7%;
-      text-transform: uppercase; }
+      width: 7%; }
       body .main .mainTables .leftTable .map {
         color: #8767ac;
         background-color: #ececec;
@@ -8392,6 +8392,7 @@ body {
         text-align: center;
         transition: 0.5s linear; }
       body .main .mainTables .leftTable .globe {
+        text-transform: uppercase;
         color: #5b2d59;
         padding: 25px 10px;
         margin-top: 10px;
@@ -8401,7 +8402,47 @@ body {
         body .main .mainTables .leftTable .globe i {
           font-size: 38px; }
     body .main .mainTables .rightTable {
-      width: 93%; }
+      width: 93%;
+      padding: 25px 0px;
+      border-radius: 10px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      background-color: #ececec; }
+      body .main .mainTables .rightTable table {
+        z-index: 9;
+        text-transform: uppercase; }
+        body .main .mainTables .rightTable table tbody {
+          overflow: hidden;
+          height: 234px; }
+        body .main .mainTables .rightTable table tr:first-child {
+          display: table-row;
+          width: 100%;
+          color: #333;
+          font-weight: lighter;
+          border-bottom: 0px; }
+        body .main .mainTables .rightTable table tr:nth-child(2) {
+          border-top: none; }
+        body .main .mainTables .rightTable table tr {
+          text-align: center;
+          font-weight: bold;
+          border: 1px solid;
+          border-color: rgba(0, 0, 0, 0.102); }
+          body .main .mainTables .rightTable table tr td {
+            text-align: center;
+            padding: 10px 20px;
+            border-color: rgba(0, 0, 0, 0.102); }
+        body .main .mainTables .rightTable table tr:not(:first-child):hover {
+          background-color: rgba(255, 255, 255, 0.3); }
+      body .main .mainTables .rightTable .arrow {
+        width: 100%;
+        padding: 10px 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal; }
+        body .main .mainTables .rightTable .arrow img {
+          margin: auto;
+          width: 32px;
+          cursor: pointer;
+          transition: .5s ease-in; }
   body .main .mainProjects {
     margin-bottom: 30px; }
     body .main .mainProjects .mainProject {
