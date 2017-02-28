@@ -120,18 +120,30 @@
               </div>
               <div class="carousel">
                 <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider1.png" alt=""></div>
-                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider2.png" alt=""></div>
-                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider3.jpg" alt=""></div>
-                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider4.jpg" alt=""></div>
                 <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider5.png" alt=""></div>
+                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider4.jpg" alt=""></div>
+                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider3.jpg" alt=""></div>
+                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider2.png" alt=""></div>
               </div>
             </div>
         </div>
       </div>
     </section>
     <section class="main">
-    <div class="mainTables">
+    <div class="mainTables container">
+      <div class="leftTable ">
+        <div class="map">
+          <img style="margin-bottom:3px" src="assets/images/map.png" alt="">
+          <p>ÖLKƏDAXİLİ</p>
+        </div>
+        <div class="globe">
+          <i class="fa fa-globe"></i>
+          <p>Dövlətlər <br>arası</p>
+        </div>
+      </div>
+      <div class="rightTable">
 
+      </div>
     </div>
     <div class="mainProjects container">
       <div class="Heading">
@@ -246,7 +258,7 @@
           </div>
           <div class="col-lg-2">
             <div>
-            <img src="assets/images/foundation.png" alt="">
+            <img style="margin-bottom:7px" src="assets/images/foundation.png" alt="">
             <p>
               <span>Heydar Alİyev foundation</span>
               Heydar Alİyev foundation
@@ -255,13 +267,13 @@
           </div>
           <div class="col-lg-2">
             <div>
-            <img src="assets/images/qarabag.png" alt="">
+            <img class="mb" src="assets/images/qarabag.png" alt="">
             <p><span>Virtual qarabağ</span></p>
             </div>
           </div>
           <div class="col-lg-2">
             <div>
-            <img src="assets/images/ady.png" alt="">
+            <img class="mb" src="assets/images/ady.png" alt="">
             <p><span>Ady Express</span></soa></p>
             </div>
           </div>
@@ -270,8 +282,11 @@
     </div>
 
     </section>
-    <section class="footer">
-    
+    <section class="footer flexCenter">
+      <div class="container">
+        <p class="pull-left">© 2016 Azərbaycan Dəmir Yolları QSC</p>
+        <span class="pull-right"><img src="assets/images/april.png" alt=""></span>
+      </div>
     </section>
   </div>
 </body>
@@ -282,11 +297,21 @@ $(document).ready(function(){
 
   $('.rightButton').click(function() {
         $('.carousel').animate({'margin-left': '-=1146px',}, 300, function(){
-          i++;
-          if (i === $('.slide').length) {
-            i=0;
-            $('.carousel').animate({'margin-left': '0px',});
-          }
+          $('.carousel .slide:last').after($('.slide:first'));
+          $(this).css('margin-left', '0');
+          // i++;
+          // if (i === $('.slide').length) {
+          //   i=0;
+          //   $('.carousel').animate({'margin-left': '0px',});
+          // }
+        })
+  });
+  var u= 0;
+  $('.leftButton').click(function() {
+        $('.carousel').animate({'margin-left': '+=1146px',}, 300, function(){
+            //  $(this).css('margin-left', '0');
+            $('.carousel .slide:last').after($('.slide:first'));
+
         })
   });
 });

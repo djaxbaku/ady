@@ -139,9 +139,11 @@ body{
         }
         .buttons{
           .leftButton{
+            cursor: pointer;
             position:absolute;
             top: 46%;
             z-index: 2;
+            opacity: 0.8;
             left:40px;
             padding: 9px 24px 9px 20px;
             border: 2.24px solid white;
@@ -153,11 +155,13 @@ body{
             }
           }
           .rightButton{
+              cursor: pointer;
               position:absolute;
               top: 46%;
+              opacity: 0.8;
               right: 40px;
               z-index: 2;
-              padding: 9px 24px 9px 23px;
+              padding: 9px 22px 10px 22px;
               border: 2.24px solid white;
               display: inline-block;
               border-radius:100%;
@@ -165,6 +169,9 @@ body{
                 color: white;
                     font-size: 37px;
               }
+          }
+          .leftButton:hover,  .rightButton:hover{
+            opacity: 1;
           }
         }
           .slider{
@@ -184,8 +191,14 @@ body{
             overflow: hidden !important;
             width:calc(5 * 1146px);
             .slide{
+              height: 100%;
               .col-md-12, .col-lg-12, .col-sm-12{
                 padding:0px;
+              }
+              img{
+                height:567px;
+                width: 100%;
+                object-fit: cover;
               }
               width:1146px;
               float:left;
@@ -200,6 +213,33 @@ body{
       .mainTables{
         padding:30px 0px 13px;
         height: 292px;
+        .leftTable{
+          width:7%;
+          text-transform: uppercase;
+          .map{
+            color: #8767ac;
+            background-color: rgb(236, 236, 236);
+            border-radius: 25px 0 0 25px;
+            padding: 25px 10px;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.5s linear;
+          }
+          .globe{
+            color: #5b2d59;
+            padding: 25px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.5s linear;
+            i{
+              font-size: 38px;
+            }
+          }
+        }
+        .rightTable{
+          width: 93%;
+        }
       }
       .mainProjects{
           margin-bottom: 30px;
@@ -371,7 +411,9 @@ body{
           border-top: 0.935px solid rgba(0, 0, 0, 0.102);
           .col-lg-2 div{
             width:135px;
-
+            img:last-child{
+              margin-bottom: 10px;
+            }
             margin:auto;
             text-align: center;
             background-color: rgba(211, 222, 231, 0.2);
@@ -390,8 +432,10 @@ body{
                 color: rgb(82, 95, 113);
               }
               img{
+
                 height: 59px;
               }
+
             }
           }
         }

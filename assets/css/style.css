@@ -8220,6 +8220,9 @@ button.close {
   font-weight: bold;
   margin-bottom: 25px; }
 
+.mb {
+  margin-bottom: 15px; }
+
 body {
   border-top: 5px solid #007bc8;
   font-family: "Roboto Condensed"; }
@@ -8322,9 +8325,11 @@ body {
           box-shadow: none;
           padding: 1px 6px; }
     body .header .headerBottom .buttons .leftButton {
+      cursor: pointer;
       position: absolute;
       top: 46%;
       z-index: 2;
+      opacity: 0.8;
       left: 40px;
       padding: 9px 24px 9px 20px;
       border: 2.24px solid white;
@@ -8334,17 +8339,21 @@ body {
         color: white;
         font-size: 37px; }
     body .header .headerBottom .buttons .rightButton {
+      cursor: pointer;
       position: absolute;
       top: 46%;
+      opacity: 0.8;
       right: 40px;
       z-index: 2;
-      padding: 9px 24px 9px 23px;
+      padding: 9px 22px 10px 22px;
       border: 2.24px solid white;
       display: inline-block;
       border-radius: 100%; }
       body .header .headerBottom .buttons .rightButton i {
         color: white;
         font-size: 37px; }
+    body .header .headerBottom .buttons .leftButton:hover, body .header .headerBottom .buttons .rightButton:hover {
+      opacity: 1; }
     body .header .headerBottom .slider {
       position: relative;
       overflow: hidden;
@@ -8359,13 +8368,40 @@ body {
       overflow: hidden !important;
       width: calc(5 * 1146px); }
       body .header .headerBottom .carousel .slide {
+        height: 100%;
         width: 1146px;
         float: left; }
         body .header .headerBottom .carousel .slide .col-md-12, body .header .headerBottom .carousel .slide .col-lg-12, body .header .headerBottom .carousel .slide .col-sm-12 {
           padding: 0px; }
+        body .header .headerBottom .carousel .slide img {
+          height: 567px;
+          width: 100%;
+          object-fit: cover; }
   body .main .mainTables {
     padding: 30px 0px 13px;
     height: 292px; }
+    body .main .mainTables .leftTable {
+      width: 7%;
+      text-transform: uppercase; }
+      body .main .mainTables .leftTable .map {
+        color: #8767ac;
+        background-color: #ececec;
+        border-radius: 25px 0 0 25px;
+        padding: 25px 10px;
+        cursor: pointer;
+        text-align: center;
+        transition: 0.5s linear; }
+      body .main .mainTables .leftTable .globe {
+        color: #5b2d59;
+        padding: 25px 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        text-align: center;
+        transition: 0.5s linear; }
+        body .main .mainTables .leftTable .globe i {
+          font-size: 38px; }
+    body .main .mainTables .rightTable {
+      width: 93%; }
   body .main .mainProjects {
     margin-bottom: 30px; }
     body .main .mainProjects .mainProject {
@@ -8496,6 +8532,8 @@ body {
         text-align: center;
         background-color: rgba(211, 222, 231, 0.2);
         height: 60px; }
+        body .main .mainPages .extraPages .col-lg-2 div img:last-child {
+          margin-bottom: 10px; }
         body .main .mainPages .extraPages .col-lg-2 div p {
           margin-top: 10px;
           text-align: left;
