@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
   <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   <title>Azərbaycan Dəmir Yollları</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
 </head>
 <body>
   <div class="">
@@ -44,21 +47,19 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle flexCenter" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Haqqımızda </a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Rəhbərlik</a></li>
+                    <li><a href="#">Struktur</a></li>
+                    <li><a href="#">Departamentlər</a></li>
+                    <li><a href="">Tariximiz</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sərnişinlər üçün </a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Hərəkət cədvəli</a></li>
+                    <li><a href="#">Onlayn Bilet Satışı</a></li>
+                    <li><a href="#">Gediş haqqı tarifləri</a></li>
+
                   </ul>
                 </li>
                 <li class="">
@@ -67,43 +68,43 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media </a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Xəbərlər</a></li>
+                    <li><a href="#">Beynəlxalq mətbuat</a></li>
+                    <li><a href="#">Foto albom</a></li>
+                    <li><a href="">Video qalereya</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sənədlər</a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Normativ sənədlər</a></li>
+                    <li><a href="#">Hüquqi sənədlər</a></li>
+
+
                   </ul>
                 </li>
-                <li class="dropdown">
+                <li >
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Əlaqə</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
+
                 </li>
-                <li class="flexCenter"><i class="fa fa-2x fa-search"></i></li>
+                <li class="flexCenter search"><i class="fa fa-2x fa-search"></i></li>
               </ul>
             </div>
           </div>
           </nav>
       </div>
+      <div class="searchBar container">
+        <div >
+          <form action="">
+            <input type="text" name="" value="Axtar">
+            <button type="submit">Axtar</button>
+          </form>
+        </div>
+      </div>
       <div class="background"></div>
       <div class="row">
         <div class="headerBottom container">
-          <div class="sliderText col-md-4 col-md-offset-6">
+          <div class="sliderText fadeInDown animated  col-md-4 col-md-offset-6">
             <div class="topText">
               <span>İNDİ DƏMİR YOLLARI DAHA SƏRFƏLİ.</span>
             </div>
@@ -142,7 +143,8 @@
         </div>
       </div>
       <div class="rightTable pull-right">
-        <table rules="COLS">
+        <div class="tables">
+          <table rules="COLS">
           <tbody>
             <tr class="firstRow">
               <td>qatarlar</td>
@@ -150,10 +152,10 @@
               <td>BAKIYA GƏLMƏ</td>
               <td>İSTİQAMƏT</td>
               <td>SON MƏNTƏQƏYƏ ÇATMA </td>
-              <td>SON MƏNTƏQƏDƏN YOLA DÜŞMƏ</td>  
+              <td>SON MƏNTƏQƏDƏN YOLA DÜŞMƏ</td>
               <td>QEYD</td>
             </tr>
-            <tr class="secondrow">
+            <tr class="row2">
               <td>98/97</td>
               <td>23:10</td>
               <td> 07:00</td>
@@ -162,7 +164,7 @@
               <td>21:00</td>
               <td>Hər gün</td>
             </tr>
-            <tr class="secondrow">
+            <tr class="row3">
               <td>656-664/<br>655-663</td>
               <td>23:10</td>
               <td> 06:40</td>
@@ -171,7 +173,7 @@
               <td>22:45 <br>18:55</td>
               <td>Hər gün</td>
             </tr>
-            <tr class="secondrow">
+            <tr class="row4">
               <td>660-672/<br>659-671</td>
               <td>23:30</td>
               <td> 05:40</td>
@@ -180,7 +182,7 @@
               <td>20:10<br>21:05</td>
               <td>Hər gün</td>
             </tr>
-            <tr class="secondrow">
+            <tr class="row5">
               <td>666/665</td>
               <td>21:40</td>
               <td>06:20</td>
@@ -189,7 +191,7 @@
               <td>19:10</td>
               <td>Hər gün</td>
             </tr>
-            <tr class="secondrow">
+            <tr class="row6">
               <td>608/607</td>
               <td>TƏK TARIXLƏRDƏ <br>09:00</td>
               <td>CÜT <br> TARIXLƏRDƏ <br>15:55</td>
@@ -198,7 +200,7 @@
               <td>CÜT TARIXLƏRDƏ <br>09:00</td>
               <td>GÜNAŞIRI</td>
             </tr>
-            <tr class="secondrow">
+            <tr class="row7">
               <td>611/612</td>
               <td>20:00 </td>
               <td> 09:35</td>
@@ -207,7 +209,7 @@
               <td>03:50</td>
               <td>Hər gün</td>
             </tr>
-            <tr class="secondrow">
+            <tr class="row8">
               <td>6001/6022</td>
               <td>-</td>
               <td>-</td>
@@ -218,6 +220,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
         <div class="arrow flexCenter">
          <img src="assets/images/moreList.png" alt="">
         </div>
@@ -377,20 +380,49 @@ $(document).ready(function(){
         $('.carousel').animate({'margin-left': '-=1146px',}, 300, function(){
           $('.carousel .slide:last').after($('.slide:first'));
           $(this).css('margin-left', '0');
-          // i++;
-          // if (i === $('.slide').length) {
-          //   i=0;
-          //   $('.carousel').animate({'margin-left': '0px',});
-          // }
+
         })
   });
   var u= 0;
   $('.leftButton').click(function() {
         $('.carousel').animate({'margin-left': '+=1146px',}, 300, function(){
             //  $(this).css('margin-left', '0');
-            $('.carousel .slide:last').after($('.slide:first'));
 
+
+            if ( $('.carousel').css('marginLeft') == '0px') {
+              $('.slide:first').css('margin-left', '+=4730px');
+            }
         })
   });
+  $('fa-search').click(function(event) {
+
+  });
+  //searchButton
+  $('.search').click(function(event) {
+    $('.searchBar div').toggleClass('searchToggle');
+    $('.searchBar input').toggleClass('mt-30');
+  });
+  //Table arrow
+  var a=0;
+  $('.arrow img').click(function(event) {
+    if (a==0) {
+      $(this).css('transform','rotate(+180deg)');
+      $('.tables').css('animation', 'heightMax 1s 1');
+      $('.tables').css('height', '489px');
+      a=1;
+    }
+    else {
+      $(this).css('transform','rotate(0deg)');
+      $('.tables').css('animation', 'heightMin 1s 1');
+      $('.tables').css('height', '272px');
+      a=0;
+    }
+  });
+  //dropdown
+  $('.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).fadeIn(1);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).fadeOut(1);
+});
 });
 </script>

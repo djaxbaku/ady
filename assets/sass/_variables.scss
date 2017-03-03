@@ -23,3 +23,19 @@ $ff: "Roboto Condensed";
 .mb{
   margin-bottom: 15px;
 }
+.searchToggle{
+  height: 100% !important;
+}
+.mt-30{
+  margin-top: 30px;
+}
+@keyframes heightMax {
+  0% {height: 272px;}
+  50%   { height:  0px; }
+  100% { height: 489px; }
+}
+@keyframes heightMin {
+  0% {height: 489px;}
+  50%   { height:  0px; }
+  100% { height: 272px; }
+}
