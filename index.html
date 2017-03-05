@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="owl.carousel.min.css">
   <script src="assets/js/jquery-3.1.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
   <title>Azərbaycan Dəmir Yollları</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
 </head>
@@ -113,23 +115,24 @@
             </div>
             <div class="bottomText"><button type="submit" name="buyTicket" val="">ONLINE BILET AL</button></div>
           </div>
-            <div class="slider">
+            <div class=" carousel slide" id="myCarousel" data-ride="carousel">
               <div class="wrapper"></div>
-              <div class="buttons">
-                <div class="leftButton"><i class="fa fa-4x  fa-angle-left"></i></div>
-                <div class="rightButton"><i class="fa  fa-angle-right"></i></div>
+
+              <div class=" carousel-inner" role="listbox">
+                <div class="slide1 item active"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider1.png" alt=""></div>
+                <div class="slide1 item"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider5.png" alt=""></div>
+                <div class="slide1 item"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider4.jpg" alt=""></div>
+                <div class="slide1 item"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider3.jpg" alt=""></div>
+                <div class="slide1 item"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider2.png" alt=""></div>
               </div>
-              <div class="carousel">
-                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider1.png" alt=""></div>
-                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider5.png" alt=""></div>
-                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider4.jpg" alt=""></div>
-                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider3.jpg" alt=""></div>
-                <div class="slide"><img class="col-lg-12 col-md-12 col-sm-12" src="assets/images/slider2.png" alt=""></div>
-              </div>
+
+              <div class=" left carousel-control"  href="#myCarousel" role="button" data-slide="prev"><i class="fa fa-4x  fa-angle-left"></i></div>
+              <div class=" right carousel-control" href="#myCarousel" role="button" data-slide="next"><i class="fa  fa-angle-right"></i></div>
             </div>
         </div>
       </div>
     </section>
+
     <section class="main">
     <div class="mainTables container">
       <div class="leftTable pull-left">
@@ -375,7 +378,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
   var i = 0;
-
+  $(".owl-carousel").owlCarousel();
   $('.rightButton').click(function() {
         $('.carousel').animate({'margin-left': '-=1146px',}, 300, function(){
           $('.carousel .slide:last').after($('.slide:first'));
@@ -419,10 +422,10 @@ $(document).ready(function(){
     }
   });
   //dropdown
-  $('.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).fadeIn(1);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).fadeOut(1);
-});
+    $('.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').stop(true, true).fadeIn(1);
+  }, function() {
+    $(this).find('.dropdown-menu').stop(true, true).fadeOut(1);
+  });
 });
 </script>

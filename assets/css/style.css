@@ -8455,13 +8455,13 @@ body {
     body .header .headerBottom .carousel {
       overflow: hidden !important;
       width: calc(5 * 1146px); }
-      body .header .headerBottom .carousel .slide {
+      body .header .headerBottom .carousel .slide1 {
         height: 100%;
         width: 1146px;
         float: left; }
-        body .header .headerBottom .carousel .slide .col-md-12, body .header .headerBottom .carousel .slide .col-lg-12, body .header .headerBottom .carousel .slide .col-sm-12 {
+        body .header .headerBottom .carousel .slide1 .col-md-12, body .header .headerBottom .carousel .slide1 .col-lg-12, body .header .headerBottom .carousel .slide1 .col-sm-12 {
           padding: 0px; }
-        body .header .headerBottom .carousel .slide img {
+        body .header .headerBottom .carousel .slide1 img {
           user-select: none;
           height: 567px;
           width: 100%;
